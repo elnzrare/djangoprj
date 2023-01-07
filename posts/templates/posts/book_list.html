@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>books list</title>
+</head>
+<body>
+<p><h1>These are available books:</h1></p>
+{% for book in books %}
+    <ul><li><a href="/books/{{ book.pk }}">{{ book.name }}</a></li></ul>
+{% endfor %}
+</body>
+</html>
